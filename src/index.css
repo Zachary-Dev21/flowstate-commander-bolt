@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-teal-500 hover:bg-teal-400 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-150 text-sm;
+  }
+
+  .btn-ghost {
+    @apply text-slate-400 hover:text-slate-200 hover:bg-slate-800 px-3 py-2 rounded-lg transition-colors duration-150 text-sm;
+  }
+
+  .card {
+    @apply bg-slate-800 border border-slate-700 rounded-xl;
+  }
+
+  .input {
+    @apply bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500
+           focus:outline-none focus:border-teal-500 transition-colors duration-150 w-full;
+  }
+}
+
+.timeline-grid {
+  position: relative;
+}
+
+.task-block-enter {
+  animation: slide-up 0.2s ease-out;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
