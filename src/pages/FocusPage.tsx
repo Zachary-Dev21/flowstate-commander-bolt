@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Timer, Play, Pause, X, AlertTriangle, Check, Music, Volume2, VolumeX } from 'lucide-react'
+import { Timer, Play, Pause, X, TriangleAlert as AlertTriangle, Check, Music, Volume2, VolumeX } from 'lucide-react'
 import { useFocusSessions } from '../hooks/useFocusSessions'
 import type { Task } from '../types'
 

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { CalendarDays, Sparkles, Timer, BarChart3, LogOut, Zap } from 'lucide-react'
+import { CalendarDays, Sparkles, Timer, ChartBar as BarChart3, LogOut, Zap } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
 const navItems = [

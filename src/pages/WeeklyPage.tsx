@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronLeft, ChevronRight, Target, BarChart3, Clock, CheckCircle2 } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Target, ChartBar as BarChart3, Clock, CircleCheck as CheckCircle2 } from 'lucide-react'
 import { format, addWeeks, subWeeks, parseISO } from 'date-fns'
 import { useWeeklyReview, useWeeklyStats } from '../hooks/useWeeklyReview'
 import { useHabits } from '../hooks/useHabits'
